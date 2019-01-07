@@ -31,5 +31,10 @@ public class PrinterTest {
         assertEquals(5, printer.refillPrinter());
     }
 
+    @Test
+    public void depleteToner() {
+        assertEquals(8, printer.depleteToner(2,1));
+    }
+
 
 }

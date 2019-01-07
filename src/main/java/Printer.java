@@ -19,10 +19,13 @@ public class Printer {
         return (this.pages - (pages * copies));
     }
 
-    public int printToner(int )
-
     public int refillPrinter() {
         return ((this.pages - this.pages) + 5);
+    }
+
+    public int depleteToner(int pages, int copies) {
+        int tonerUsage = (pages * copies);
+        return (this.toner - tonerUsage);
     }
 
 
